@@ -1,0 +1,22 @@
+@mixin sizecon ($max, $width) {
+    max-width: $max;
+    width: $width;
+}
+
+@mixin flex ($flex, $just, $align) {
+    display: $flex;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin columcent ($flex,$fdirect,$algn) {
+    display: $flex;
+    flex-direction: $fdirect;
+    align-items: $algn;
+    
+}
+@mixin bgimage ($size:cover,$rep:no-repeat,$pos:center) {
+    
+    background-size: $size;
+    background-repeat: $rep;
+    background-position: $pos;
+}
