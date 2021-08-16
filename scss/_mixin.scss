@@ -8,10 +8,9 @@
     justify-content: $just;
     align-items: $align;
 }
-@mixin columcent ($flex,$fdirect,$algn) {
+@mixin columcent ($flex,$fdirect) {
     display: $flex;
     flex-direction: $fdirect;
-    align-items: $algn;
     
 }
 @mixin bgimage ($size:cover,$rep:no-repeat,$pos:center) {

@@ -152,21 +152,19 @@ header .header-container .menu {
           align-items: center;
 }
 .home-container-text {
-  width: 500px;
-  height: 70%;
-  color: antiquewhite;
+  width: 50%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.home-container-text p {
+.home-container-text div {
+  color: antiquewhite;
+}
+.home-container-text div p {
   margin: 20px 0;
 }
 .home-container-image {

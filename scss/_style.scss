@@ -63,12 +63,16 @@ header {
         margin: 0 auto;
         @include flex (flex, space-between, center);
         &-text{
-            width: 500px;
-            height: 70%;
-            color: antiquewhite;
-            @include columcent(flex,column);
-            p{
-                margin: 20px 0;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: flex-end;
+            div{
+                color: antiquewhite;
+                p{
+                    margin: 20px 0;
+                }
+                
             }
         }
         &-image {
