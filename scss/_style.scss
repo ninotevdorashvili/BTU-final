@@ -6,8 +6,9 @@ header {
     position: fixed;
     z-index: 10;
     .header-container{
-        width: 70%;
-        margin: 0 auto;
+        @include cont;
+        // width: 70%;
+        // margin: 0 auto;
         @include flex (flex, flex-end, center);
         .head-nav{
             @media (max-width:950px) {
@@ -80,8 +81,9 @@ header {
     .home-container{
         background-color: rgb(1, 2, 14);
         height: 100vh;
-        width: 70%;
-        margin: 0 auto;
+        @include cont;
+        // width: 70%;
+        // margin: 0 auto;
         @include flex (flex, space-between, center);
         &-text{
             width: 50%;
@@ -118,7 +120,20 @@ header {
                         line-height: 20px;
                     }
                 }
-                
+                .home-button {
+                    @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+                    @include wh (150px, 40px);
+                    margin: 20px 0;
+                    border-radius: 25px;
+                    border: 1px solid $fontcolor;
+                    background-color: $bg-color;
+                    @include flex(flex,center,center);
+                    transition: 0.3s;
+                    &:hover{
+                        opacity: 0.7;
+                        box-shadow: 0 8px 12px 0 $fontcolor;
+                    }
+                }    
             }
         }
         &-image {
@@ -145,8 +160,9 @@ header {
     &-container{
         background-color: rgb(1, 2, 14);
         height: 100vh;
-        width: 70%;
-        margin: 0 auto;
+        @include cont;
+        // width: 70%;
+        // margin: 0 auto;
         @include flex (flex, space-between, center);
         &-image{
             position: relative;
@@ -225,6 +241,20 @@ header {
                 }
             }
         }
+        .about-button {
+            @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+            @include wh (150px, 40px);
+            margin: 20px 0;
+            border-radius: 25px;
+            border: 1px solid $fontcolor;
+            background-color: $bg-color;
+            @include flex(flex,center,center);
+            transition: 0.3s;
+            &:hover{
+                opacity: 0.7;
+                box-shadow: 0 8px 12px 0 $fontcolor;
+            }
+        }
     }
     &-bg-color{
         width: 15%;
@@ -233,5 +263,270 @@ header {
         position: absolute;
         top: 0;
         right: 0;
+    }
+}
+// section-3-styles
+.portfolio{
+    background-image: url('../images/Ti29oM.jpg');
+    @include bgimage (cover, no-repeat, center);
+    &-container{
+        @include cont;
+        height: 100vh;
+        background-color: $bg-color;
+        padding-top: 50px;
+        .portfolio-title{
+            padding-top: 40px;
+            .butt{
+                @include flex(flex,space-between,center);
+                .portf-pg-name{
+                    @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+                    letter-spacing: 3px;
+                    opacity: 0.8;
+                }
+                .pf-button{
+                    @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+                    @include wh (100px, 50px);
+                    margin: 20px 0;
+                    border-radius: 25px;
+                    border: 1px solid $fontcolor;
+                    background-color: $bg-color;
+                    @include flex(flex,center,center);
+                    transition: 0.3s;
+                    &:hover{
+                        opacity: 0.7;
+                        box-shadow: 0 8px 12px 0 $fontcolor;
+                    }
+                }
+            }
+            .lat-proj{
+                @include fontstyle (40px,$textfont,600,$fontcolor);
+                letter-spacing: 2px;
+                margin-top: 10px;
+            }
+            .line{
+                padding-top: 10px;
+                 li{
+                    &:nth-child(1){
+                        width: 64px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }
+                    &:nth-child(2){
+                        width: 10px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }
+                    &:nth-child(3){
+                        width: 7px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }    
+                }
+            }
+            
+        }
+        .Slick{
+            padding-top: 50px;
+            .slider{
+                @include flex(flex,space-between,center);
+                .slider-item{
+                    width: 350px;
+                    height: 500px;
+                    margin:20px;
+                    h4{
+                        margin-top: 20px;
+                        a{
+                            @include fontstyle(20px,$textfont,600,$fontcolor);
+                        }
+                    }
+                }
+                .project-4{
+                    img{
+                        height: 80%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+// section-3-styles
+.pg-pricing{
+    background-image: url('../images/Ti29oM.jpg');
+    @include bgimage (cover, no-repeat, center);
+    height: 100vh;
+    &-text{
+        @include cont;
+        color: #fff;
+        text-align: center;
+        padding-top: 250px;
+        .Pricing{
+            @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+            letter-spacing: 3px;
+            opacity: 0.8;
+        }
+        .pr-plans{
+            @include fontstyle (40px,$textfont,600,$fontcolor);
+            letter-spacing: 2px;
+            margin-top: 50px;
+        }
+        .line{
+            padding-top: 10px;
+             li{
+                &:nth-child(1){
+                    width: 64px;
+                    @include line (inline-block,#fff, 50px, 3px);
+                }
+                &:nth-child(2){
+                    width: 10px;
+                    @include line (inline-block,#fff, 50px, 3px);
+                }
+                &:nth-child(3){
+                    width: 7px;
+                    @include line (inline-block,#fff, 50px, 3px);
+                }    
+            }
+        }
+    }
+    &-container{
+        @include cont;
+        height: 100%;
+        @include flex(flex,space-between,flex-start);
+        margin-top: 100px;
+        .columns{
+            width: 250px;
+            height: 250px;
+            .price{
+                border: 1px solid $fontcolor;
+                transition: 0.3s;
+                height: 150px;
+                text-align: center;
+                background-color: black;
+                &:hover{
+                    box-shadow: 0 8px 12px 0 $fontcolor;
+                    opacity: 0.7;
+                }
+                &-title{
+                    background-color: $fontcolor;
+                    height: 30%;
+                    @include fontstyle (25px,$textfont,600,$bg-color);
+                    @include flex (flex,center,center);
+                }
+                .cost{
+                    @include fontstyle (25px,$textfont,600,$fontcolor);
+                    margin: 40px 0;
+                }
+            }
+            .pr-button{
+                @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+                @include wh (100px, 50px);
+                margin: 20px 0;
+                border-radius: 25px;
+                border: 1px solid $fontcolor;
+                background-color: $bg-color;
+                @include flex(flex,center,center);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 0.7;
+                    box-shadow: 0 8px 12px 0 $fontcolor;
+                }
+            }
+        }
+    }
+}
+// section-4-styles
+.client{
+    background-image: url('../images/Ti29oM.jpg');
+    @include bgimage (cover, no-repeat, center);
+    padding-top: 300px;
+    &-container{
+        @include cont;
+        height: 100vh;
+        // background-color: $bg-color;
+        &-t{
+            color: #fff;
+            @include flex(flex,center,center);
+            flex-direction: column;
+            .container-t-1{
+                @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+                letter-spacing: 3px;
+                opacity: 0.8;
+            }
+            .container-t-2{
+                @include fontstyle (40px,$textfont,600,$fontcolor);
+                letter-spacing: 2px;
+                margin-top: 50px;
+            }
+            .line{
+                padding-top: 10px;
+                 li{
+                    &:nth-child(1){
+                        width: 64px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }
+                    &:nth-child(2){
+                        width: 10px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }
+                    &:nth-child(3){
+                        width: 7px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }    
+                }
+            }
+        }
+        .users{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: $bg-color;
+            margin-top: 50px;
+            .us-ul{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .list{
+                    width: 400px;
+                    @include flex (flex,space-between,flex-end);
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                    border: 1px solid $fontcolor;
+                    border-radius: 25px 25px 0 25px;
+                    span{
+                        color: $fontcolor;
+                        opacity: 0.8;
+                        margin: 40px;
+                        @include fontstyle (16px,$textfont,300,$fontcolor);
+                    }
+                    img{
+                        border-radius: 25px 25px 0 25px;
+                        width: 128px;
+                        height: 128px;
+                    }
+                    .user-com{
+                        color: $fontcolor;
+                        @include fontstyle (14px,$textfont,300,$fontcolor);
+                        // margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .client-button{
+            width: 25%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+            .butt{
+                @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+                @include wh (100px, 50px);
+                margin: 20px 0;
+                border-radius: 25px;
+                border: 1px solid $fontcolor;
+                background-color: $bg-color;
+                @include flex(flex,center,center);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 0.7;
+                    box-shadow: 0 8px 12px 0 $fontcolor;
+                }
+            }
+        }
     }
 }

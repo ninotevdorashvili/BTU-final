@@ -37,3 +37,11 @@
     font-size: $fsize;
     color: $color;
 }
+@mixin cont ($width:70%, $marg:0 auto){
+    width: $width;
+    margin: $marg;
+}
+@mixin wh ($wid,$hei) {
+    width: $wid;
+    height: $hei;
+}
