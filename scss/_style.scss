@@ -1,9 +1,10 @@
 header {
     width: 100%;
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 10;
     .header-container{
         width: 70%;
         margin: 0 auto;
@@ -24,6 +25,13 @@ header {
                     }
                 }
                 @include flex (flex, space-between, center);
+                a{
+                    font-size: 16px;
+                    font-family: 'Georama';
+                    // font-weight: 600px;
+                    letter-spacing: 2px;
+                    color: #fff;
+                }
             }
         }
         .active{
@@ -54,11 +62,24 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgb(1, 2, 14);;
-    }
-    &-container{
         background-color: rgb(1, 2, 14);
-        height: 789px;
+        .home-icon{
+            @include columcent(flex,column);
+            position: absolute;
+            top:370px;
+            left: 20px;
+            a{
+                .icon{
+                    color: #fff;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .home-container{
+        background-color: rgb(1, 2, 14);
+        height: 100vh;
         width: 70%;
         margin: 0 auto;
         @include flex (flex, space-between, center);
@@ -71,17 +92,146 @@ header {
                 color: antiquewhite;
                 p{
                     margin: 20px 0;
+                    &:nth-child(1){
+                        font-size: 30px;
+                        font-family: 'Space Grotesk';
+                        font-weight: bold;
+                        letter-spacing: 4px;
+                    }
+                    &:nth-child(2){
+                        font-size: 60px;
+                        font-family: 'Georama';
+                        font-weight: 600px;
+                        letter-spacing: 5px;
+                    }
+                    &:nth-child(3){
+                        font-size: 20px;
+                        font-family: 'Space Grotesk';
+                        font-weight: 600px;
+                        letter-spacing: 5px;
+                    }
+                    &:nth-child(4){
+                        font-size: 16px;
+                        font-family: 'Space Grotesk';
+                        font-weight: normal;
+                        letter-spacing: 1px;
+                        line-height: 20px;
+                    }
                 }
                 
             }
         }
         &-image {
-            width: 50%;
+            position: relative;
+            width: 80%;
             height: 100%;
             border-radius: 76% 24% 0% 100% / 0% 0% 100% 100% ;
             background-image: url('../images/Ti29oM.jpg');
             @include bgimage (cover, no-repeat, center);
+            .astronaut{
+                position: absolute;
+                top:50%;
+                right: 98%;
+                transform: translate(85%, -50%);
+            }
         }
     }
    
+}
+// section-2-styles
+.about{position: relative;
+    background-image: url('../images/Ti29oM.jpg');
+    @include bgimage (cover, no-repeat, center);
+    &-container{
+        background-color: rgb(1, 2, 14);
+        height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+        @include flex (flex, space-between, center);
+        &-image{
+            position: relative;
+            border-radius: 0% 100% 100% 0% / 30% 100% 0% 70% ;
+            width: 60%;
+            height: 100%;
+            background-image: url('../images/Ti29oM.jpg');
+            @include bgimage (cover, no-repeat, center);
+            .about-astronaut{
+                position: absolute;
+                top: 60%;
+                left: 40%;
+                transform: translate(-50%,-30%);
+            }
+        }
+        &-text{
+            @include sizecon (500px,100%);
+            .about-me{
+                @include fontstyle (30px,$textfont,600,$fontcolor);
+                letter-spacing: 2px;
+            }
+            .line{
+                padding-top: 10px;
+                 li{
+                    &:nth-child(1){
+                        width: 64px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }
+                    &:nth-child(2){
+                        width: 10px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }
+                    &:nth-child(3){
+                        width: 7px;
+                        @include line (inline-block,#fff, 50px, 3px);
+                    }    
+                }
+            }
+            p{
+                @include fontstyle (16px,$textfont,300,$fontcolor);
+                margin: 10px 0 20px;
+                line-height: 24px;
+            }
+            .skills{
+                @include fontstyle (20px,$textfont,600,$fontcolor);
+                letter-spacing: 2px;
+            }
+            .skills-bar{
+                .skill-name{
+                    @include fontstyle (14px,$textfont,300,$fontcolor);
+                    margin-top: 20px;
+                }
+                .container{
+                    width: 100%;
+                    background-color: grey;
+                    height: 20px;
+                    border-radius: 15px;
+                    .skills{
+                        text-align: right;
+                        color: white;
+                        height: 20px;
+                        border-radius: 15px;
+                    }
+                    .html{
+                        @include progress (90%,#fff,20px,black);
+                    }
+                    .js{
+                        @include progress (75%,#fff,20px,black);
+                    }
+                    .bs{
+                        @include progress (80%,#fff,20px,black);
+                    }
+                    .ps{
+                        @include progress (60%,#fff,20px,black);
+                    }
+                }
+            }
+        }
+    }
+    &-bg-color{
+        width: 15%;
+        height: 100vh;
+        background-color: $bg-color;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }

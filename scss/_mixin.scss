@@ -19,3 +19,21 @@
     background-repeat: $rep;
     background-position: $pos;
 }
+@mixin line ($inline, $color, $radius, $heigh){
+    display: $inline;
+    background-color: $color;
+    border-radius: $radius;
+    height: $heigh;
+}
+@mixin fontstyle ($size,$fam,$weight,$col) {
+    font-size: $size;
+    font-family: $fam;
+    font-weight: $weight;
+    color: $col;
+}
+@mixin progress ($width,$bgcolor,$fsize,$color) {
+    width: $width; 
+    background-color: $bgcolor;
+    font-size: $fsize;
+    color: $color;
+}

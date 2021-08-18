@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -27,18 +30,78 @@
         </div>    
     </header>
     <section class="home" id="Home">
-        <div class="bg-color"></div>
+        <div class="bg-color">
+            <div class="home-icon">
+                <a href="#"><i class="fab icon fa-facebook-f"></i></a>
+                <a href="#"><i class="fab icon fa-instagram"></i></a>
+                <a href="#"><i class="fab icon fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab icon fa-github"></i></a>
+            </div>
+        </div>
         <div class="home-container">
             <div class="home-container-text">
                 <div>
-                    <p>Hello I'm</p>
-                    <p>Nino</p>
-                    <p>Front-End Developer</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <p class="animate__animated animate__bounce">Hello I'm</p>
+                    <p class="animate__animated animate__bounce">Nino</p>
+                    <p class="animate__animated animate__bounce">Front-End Developer</p>
+                    <p class="animate__animated animate__bounce">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                 </div>    
             </div>
-            <div class="home-container-image"></div>
+            <div class="home-container-image">
+                <div class="astronaut">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ojjrkacr.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="about" id="about-me">
+        <div class="about-container">
+            <div class="about-container-image">
+                <div class="about-astronaut">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_uya4kd2o.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                </div>
+            </div>
+            <div class="about-container-text">
+                <h2 class="about-me">About Me</h2>
+                <ul class="line">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.</p>
+                <h3 class="skills">Skills</h3>
+                <ul class="line">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="skills-bar">
+                    <p class="skill-name">HTML/css</p>
+                    <div class="container">
+                        <div class="skills html">90%</div>
+                    </div>
+                    <p class="skill-name">Sass</p>
+                    <div class="container">
+                        <div class="skills html">90%</div>
+                    </div>
+                    <p class="skill-name">JavaScript</p>
+                    <div class="container">
+                        <div class="skills js">75%</div>
+                    </div>
+                    <p class="skill-name">Bootstrap</p>
+                    <div class="container">
+                        <div class="skills bs">80%</div>
+                    </div>
+                    <p class="skill-name">Ps/Ai/Id/Lr</p>
+                    <div class="container">
+                        <div class="skills ps">60%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-bg-color"></div>
     </section>
 
 
