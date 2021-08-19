@@ -48,6 +48,10 @@ a {
           box-sizing: border-box;
 }
 
+* {
+  outline: none;
+}
+
 @font-face {
   font-family: "Georama";
   src: url("../fonts/Georama-SemiBold.eot");
@@ -750,7 +754,6 @@ header .header-container .menu {
   height: 100vh;
 }
 .client-container-t {
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,6 +901,487 @@ header .header-container .menu {
   transition: 0.3s;
 }
 .client-container .client-button .butt:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 0 8px 12px 0 #fff;
+          box-shadow: 0 8px 12px 0 #fff;
+}
+
+.experience {
+  background-image: url("../images/Ti29oM.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 300px;
+}
+.experience-container {
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  background-color: #01020e;
+}
+.experience-container-t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.experience-container-t .container-t-1 {
+  font-size: 20px;
+  font-family: "Georama";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+.experience-container-t .container-t-2 {
+  font-size: 40px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+.experience-container-t .line {
+  padding-top: 10px;
+}
+.experience-container-t .line li:nth-child(1) {
+  width: 64px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 3px;
+}
+.experience-container-t .line li:nth-child(2) {
+  width: 10px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 3px;
+}
+.experience-container-t .line li:nth-child(3) {
+  width: 7px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 3px;
+}
+.experience-container .fD-cont {
+  width: 100%;
+  height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.experience-container .fD-cont:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 0 8px 12px 0 #fff;
+          box-shadow: 0 8px 12px 0 #fff;
+}
+.experience-container .fD-cont-text {
+  border-right: 2px solid #fff;
+  width: 50%;
+  height: 252px;
+  font-size: 16px;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+  color: #fff;
+  line-height: 24px;
+  padding: 30px;
+}
+.experience-container .fD-cont .front-Dev {
+  width: 50%;
+  height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.experience-container .fD-cont .front-Dev .Dev-titl {
+  font-size: 30px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.experience-container .fD-cont .front-Dev .Dev-date {
+  font-size: 20px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+.experience-container .gD-cont {
+  width: 100%;
+  height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.experience-container .gD-cont:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 0 8px 12px 0 #fff;
+          box-shadow: 0 8px 12px 0 #fff;
+}
+.experience-container .gD-cont .graph-Dis {
+  border-right: 2px solid #fff;
+  width: 50%;
+  height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.experience-container .gD-cont .Dis-titl {
+  font-size: 30px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.experience-container .gD-cont .Dis-date {
+  font-size: 20px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+.experience-container .gD-cont .graph-Dis-text {
+  width: 50%;
+  height: 252px;
+  font-size: 16px;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+  color: #fff;
+  line-height: 24px;
+  padding: 30px;
+}
+.experience-container .UX-cont {
+  width: 100%;
+  height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.experience-container .UX-cont:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 0 8px 12px 0 #fff;
+          box-shadow: 0 8px 12px 0 #fff;
+}
+.experience-container .UX-cont-text {
+  border-right: 2px solid #fff;
+  width: 50%;
+  height: 252px;
+  font-size: 16px;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+  color: #fff;
+  line-height: 24px;
+  padding: 30px;
+}
+.experience-container .UX-cont .UX-UI {
+  width: 50%;
+  height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.experience-container .UX-cont .UX-UI-titl {
+  font-size: 30px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.experience-container .UX-cont .UX-UI-date {
+  font-size: 20px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.contact {
+  background-image: url("../images/Ti29oM.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 300px;
+}
+.contact-container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.contact-container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-container-text-titl {
+  font-size: 20px;
+  font-family: "Georama";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+.contact-container-text .Contact-me {
+  font-size: 40px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+.contact-container-text .line {
+  padding-top: 10px;
+}
+.contact-container-text .line li:nth-child(1) {
+  width: 64px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 3px;
+}
+.contact-container-text .line li:nth-child(2) {
+  width: 10px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 3px;
+}
+.contact-container-text .line li:nth-child(3) {
+  width: 7px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 3px;
+}
+.contact-container .contact-info {
+  border-radius: 0% 100% 100% 0%/0% 0% 100% 100%;
+  background-color: #01020e;
+  width: 450px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.contact-container .contact-info .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+}
+.contact-container .contact-info .icon i {
+  margin: 30px;
+}
+.contact-container .contact-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+}
+.contact-container .contact-info .info a {
+  margin: 25px;
+  font-size: 20px;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #fff;
+}
+.contact-container .contact-form {
+  width: 600px;
+  height: 550px;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.contact-container .contact-form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.contact-container .contact-form .form .inp {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  background-color: #01020e;
+  font-size: 14px;
+  font-family: "Georama";
+  font-weight: 300;
+  color: #fff;
+}
+.contact-container .contact-form .form .inp:focus {
+  opacity: 0.8;
+}
+.contact-container .contact-form .form .inp::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: "Georama";
+  font-weight: 300;
+  color: #fff;
+}
+.contact-container .contact-form .form .inp::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Georama";
+  font-weight: 300;
+  color: #fff;
+}
+.contact-container .contact-form .form .inp:-ms-input-placeholder {
+  font-size: 14px;
+  font-family: "Georama";
+  font-weight: 300;
+  color: #fff;
+}
+.contact-container .contact-form .form .inp::-ms-input-placeholder {
+  font-size: 14px;
+  font-family: "Georama";
+  font-weight: 300;
+  color: #fff;
+}
+.contact-container .contact-form .form .inp::placeholder {
+  font-size: 14px;
+  font-family: "Georama";
+  font-weight: 300;
+  color: #fff;
+}
+.contact-container .contact-form .form .inp:nth-child(1), .contact-container .contact-form .form .inp:nth-child(2), .contact-container .contact-form .form .inp:nth-child(3) {
+  height: 40px;
+  width: 55%;
+}
+.contact-container .contact-form .form .submit {
+  font-size: 20px;
+  font-family: "Georama";
+  font-weight: 600;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  background-color: #01020e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact-container .contact-form .form .submit:hover {
   opacity: 0.7;
   -webkit-box-shadow: 0 8px 12px 0 #fff;
           box-shadow: 0 8px 12px 0 #fff;

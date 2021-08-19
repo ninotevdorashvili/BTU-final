@@ -45,3 +45,11 @@
     width: $wid;
     height: $hei;
 }
+@mixin column($felx:flex, $colum:column) {
+    display: $felx;
+    flex-direction: $colum;
+}
+@mixin iconstyle ($color:$fontcolor,$size:20px) {
+    color: $color;
+    font-size: $size;
+}
