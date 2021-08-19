@@ -1427,6 +1427,7 @@ header .header-container .menu {
   font-family: "Georama";
   font-weight: 600;
   color: #fff;
+  letter-spacing: 3px;
 }
 .footer .footer-container .footer-icon a {
   margin: 20px;

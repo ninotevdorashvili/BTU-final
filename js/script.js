@@ -102,3 +102,27 @@ document.getElementById('next').addEventListener('click',function(){
     users(currentpage);
 })
 users(currentpage);
+
+// form
+function validateForm(){
+    let x = document.forms['myForm']['Fname'].value;
+    if (x=='') {
+        x.required=true;
+        return false;
+    }
+}
+
+// header
+// document.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     document.getElementById('header').style.backgroundcolor = 'black';
+//   } else {
+//     document.getElementById('header').style.backgroundcolor = '';
+//   }
+// }
+
+document.getElementById('submit').addEventListener('click', function(){
+    alert('Submit');
+})

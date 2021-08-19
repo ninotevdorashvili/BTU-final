@@ -829,6 +829,7 @@ header {
             margin-bottom: 20px;
             .findeme{
                 @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+                letter-spacing: 3px;
             }
         }
         .footer-icon{
