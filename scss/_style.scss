@@ -71,9 +71,12 @@ header {
             left: 20px;
             a{
                 .icon{
-                    color: #fff;
-                    font-size: 20px;
                     margin-bottom: 30px;
+                    @include iconstyle;
+                    transition: 0.3s;
+                    &:hover{
+                        transform:scale(1.5);
+                    }
                 }
             }
         }
@@ -810,5 +813,37 @@ header {
                 }
             }
         }
+    }
+}
+// footer-style
+.footer{
+    @include wh (100%,150px);
+    background-image: url('../images/Ti29oM.jpg');
+    @include bgimage (cover, no-repeat, center);
+    padding-top: 50px;
+    .footer-container{
+        @include cont;
+        @include flex (flex,center,center);
+        flex-direction: column;
+        .finde{
+            margin-bottom: 20px;
+            .findeme{
+                @include fontstyle (20px,$pgttlfont,600,$fontcolor);
+            }
+        }
+        .footer-icon{
+            a{
+                margin: 20px;
+                i{
+                    @include iconstyle;
+                    transition: 0.3s;
+                    &:hover{
+                        transform:scale(1.5);
+                    }
+
+                }
+            }
+        }
+        
     }
 }
