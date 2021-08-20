@@ -112,17 +112,45 @@ function validateForm(){
     }
 }
 
-// header
-// document.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById('header').style.backgroundcolor = 'black';
-//   } else {
-//     document.getElementById('header').style.backgroundcolor = '';
-//   }
-// }
 
 document.getElementById('submit').addEventListener('click', function(){
     alert('Submit');
 })
+
+// scrolleffect
+// ScrollReveal().reveal('.scroll', { delay: 1000, duration: 200 });
+
+
+const scrollElements = document.querySelectorAll('.scroll');
+scrollElements.forEach((el) => {
+    el.style.opacity = 0
+  })
+const elementInView = (el, scrollOffset = 0) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <= 
+      ((window.innerHeight || document.documentElement.clientHeight) - scrollOffset)
+    );
+  } 
+const displayScrollElement = (element) => {
+  element.classList.add('scrolled');
+
+}
+const hideScrollElement = (element) => {
+  element.classList.remove('scrolled');
+}
+ 
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 100)) {
+      displayScrollElement(el);
+    } else {
+      hideScrollElement(el);
+    }
+  })
+};
+window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+  })
+
