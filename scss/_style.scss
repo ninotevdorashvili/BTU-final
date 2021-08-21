@@ -204,6 +204,9 @@ header {
                     right: 100%;
                     top: 25%;
                 }
+                @media(max-width:320px){
+                    top: 18%;
+                }
                 position: absolute;
                 top:50%;
                 right: 98%;
@@ -256,6 +259,9 @@ header {
                 @media(max-width:420px){
                     top: 20%;
                 }
+                @media(max-width:320px){
+                    top: 25%
+                }
                 position: absolute;
                 top: 60%;
                 left: 15%;
@@ -289,7 +295,7 @@ header {
                     letter-spacing: 2px;
                 }
                 .line{
-                    @media(max-width:330px){
+                    @media(max-width:384px){
                         padding-top: 0px;
                     }
                     padding-top: 10px;
@@ -314,6 +320,9 @@ header {
                     }
                     @media(max-width:330px){
                         line-height:15px;
+                    }
+                    @media(max-width:384px){
+                        margin: 10px 0 10px;
                     }
                     @include fontstyle (16px,$textfont,300,$fontcolor);
                     margin: 10px 0 20px;
@@ -791,6 +800,9 @@ header {
         @media (max-width:800px){
             margin-top: 600px;
         }
+        @media(max-width:320px){
+            padding-top: 250px;
+        }
         @include cont;
         height: auto;
         background-color: $bg-color;
@@ -830,7 +842,7 @@ header {
                 height: auto;
             }
             @media(max-width:900px){
-                flex-direction: column;
+                flex-direction:column-reverse;
                 align-items: center;
                 border: 1px solid $fontcolor;
             }
@@ -952,7 +964,7 @@ header {
                 height: auto;
             }
             @media(max-width:900px){
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: center;
                 border: 1px solid $fontcolor;
             }

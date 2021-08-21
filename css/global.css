@@ -462,6 +462,11 @@ header .header-container .menu {
     top: 25%;
   }
 }
+@media (max-width: 320px) {
+  .home .home-container-image .astronaut {
+    top: 18%;
+  }
+}
 
 .about {
   position: relative;
@@ -555,6 +560,11 @@ header .header-container .menu {
     top: 20%;
   }
 }
+@media (max-width: 320px) {
+  .about-container-image .about-astronaut {
+    top: 25%;
+  }
+}
 .about-container-text {
   max-width: 500px;
   width: 100%;
@@ -595,7 +605,7 @@ header .header-container .menu {
 .about-container-text .about-container-title .line {
   padding-top: 10px;
 }
-@media (max-width: 330px) {
+@media (max-width: 384px) {
   .about-container-text .about-container-title .line {
     padding-top: 0px;
   }
@@ -638,6 +648,11 @@ header .header-container .menu {
 @media (max-width: 330px) {
   .about-container-text .about-container-title .ab-me-t {
     line-height: 15px;
+  }
+}
+@media (max-width: 384px) {
+  .about-container-text .about-container-title .ab-me-t {
+    margin: 10px 0 10px;
   }
 }
 .about-container-text .skills {
@@ -1400,6 +1415,11 @@ header .header-container .menu {
     margin-top: 600px;
   }
 }
+@media (max-width: 320px) {
+  .experience-container {
+    padding-top: 250px;
+  }
+}
 .experience-container-t {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1480,9 +1500,9 @@ header .header-container .menu {
 @media (max-width: 900px) {
   .experience-container .fD-cont {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1697,9 +1717,9 @@ header .header-container .menu {
 @media (max-width: 900px) {
   .experience-container .UX-cont {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
