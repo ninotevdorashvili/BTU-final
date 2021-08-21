@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://ninotevdorashvili.github.io/BTU-final/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Portfolio" />
+    <meta property="og:description"        content="Front-End Developer" />
+    <meta property="og:image"              content="images/ogimage" />
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
     <link
@@ -47,7 +52,7 @@
                     <p>Nino</p>
                     <p>Front-End Developer</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-                    <a class="home-button scroll" href="#">Hire Me</a>
+                    <a class="home-button scroll" href="Contact">Hire Me</a>
                 </div>    
             </div>
             <div class="home-container-image">
@@ -240,7 +245,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="Contact">
         <div class="container-text">
             <div class="contact-container-text scroll">
                 <h3 class="contact-container-text-titl">Contact</h3>
@@ -274,8 +279,8 @@
                         <input class="F-name inp" type="text" id="Fname" name="Fname" placeholder="Your Name">
                         <input class="L-name inp" type="text" id="Lname" name="Lname" placeholder="Your Last Name">
                         <input class="Email inp" type="email" id="email" name="email" placeholder="E-email">
-                        <textarea class="massage inp" name="massage" id="massage"  placeholder="Massage"></textarea>
-                        <input class="submit" id="submit" type="submit" value="Submit">
+                        <textarea class="message inp" name="message" id="message"  placeholder="Message"></textarea>
+                        <input class="submit" id="submit" type="submit" onclick="myFunction()" value="Submit">
                     </form>
                 </div>
             </div>

@@ -134,9 +134,28 @@ users(currentpage);
 function validateForm(){
     let x = document.forms['myForm']['Fname'].value;
     if (x=='') {
-        x.required=true;
+        alert("Name must be filled out");
         return false;
     }
+    let y = document.forms['myForm']['Lname'].value;
+    if (y=='') {
+        alert("Last Name must be filled out");
+        return false;
+    }
+    let z = document.forms['myForm']['email'].value;
+    if (z=='') {
+        alert("E-mail must be filled out");
+        return false;
+    }
+    let massage = document.forms['myForm']['message'].value;
+    if (massage=='') {
+        alert("Enter your message");
+        return false;
+    }
+
+}
+function myFunction() {
+  document.getElementById("myForm").submit();
 }
 
 

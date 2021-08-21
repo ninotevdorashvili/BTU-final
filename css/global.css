@@ -183,8 +183,9 @@ header .header-container .head-nav ul {
     position: absolute;
     background-color: #01020e;
     width: 100%;
-    top: 70%;
+    top: 0;
     right: 0;
+    padding-top: 80px;
   }
   header .header-container .head-nav ul li {
     margin: 15px 0;
@@ -2108,11 +2109,11 @@ header .header-container .menu {
   height: 40px;
   width: 55%;
 }
-.contact .container .right .contact-form .form .massage {
+.contact .container .right .contact-form .form .message {
   height: 150px;
 }
 @media (max-width: 346px) {
-  .contact .container .right .contact-form .form .massage {
+  .contact .container .right .contact-form .form .message {
     width: 250px;
   }
 }
