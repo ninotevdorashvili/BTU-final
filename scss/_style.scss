@@ -674,7 +674,7 @@ header {
     padding-top: 300px;
     &-container{
         @media(max-width:320px){
-            padding-top: 200px;
+            margin-top: 200px;
         }
         @include cont;
         height: 100vh;
