@@ -673,6 +673,9 @@ header {
     @include bgimage (cover, no-repeat, center);
     padding-top: 300px;
     &-container{
+        @media(max-width:320px){
+            padding-top: 200px;
+        }
         @include cont;
         height: 100vh;
         @media(max-width:820px){
