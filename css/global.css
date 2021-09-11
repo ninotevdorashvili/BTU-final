@@ -129,6 +129,14 @@ a {
     opacity: 1;
   }
 }
+body {
+  background-image: url("../images/Ti29oM.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 header {
   width: 100%;
   height: 60px;
@@ -231,19 +239,12 @@ header .header-container .menu {
   background-color: #01020e;
 }
 
-.home {
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .home .bg-color {
   width: 15%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #01020e;
 }
 @media (max-width: 890px) {
   .home .bg-color {
@@ -284,6 +285,7 @@ header .header-container .menu {
           transform: scale(1.5);
 }
 .home .home-container {
+  border-radius: 0% 100% 100% 0%/59% 0% 100% 41%;
   background-color: #01020e;
   height: 100vh;
   width: 70%;
@@ -416,10 +418,6 @@ header .header-container .menu {
   width: 80%;
   height: 100%;
   border-radius: 76% 24% 0% 100%/0% 0% 100% 100%;
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .home .home-container-image .astronaut {
   position: absolute;
@@ -471,12 +469,11 @@ header .header-container .menu {
 
 .about {
   position: relative;
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .about-container {
+  border-radius: 0% 100% 0% 100%/0% 0% 100% 100%;
   background-color: #01020e;
   height: 100vh;
   width: 70%;
@@ -508,13 +505,8 @@ header .header-container .menu {
 }
 .about-container-image {
   position: relative;
-  border-radius: 0% 100% 100% 0%/30% 100% 0% 70%;
   width: 60%;
   height: 100%;
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,7 +767,6 @@ header .header-container .menu {
 .about-bg-color {
   width: 15%;
   height: 100vh;
-  background-color: #01020e;
   position: absolute;
   top: 0;
   right: 0;
@@ -791,12 +782,6 @@ header .header-container .menu {
   }
 }
 
-.portfolio {
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .portfolio-container {
   width: 70%;
   margin: 0 auto;
@@ -1036,10 +1021,6 @@ header .header-container .menu {
 }
 
 .pg-pricing {
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
 }
 .pg-pricing-text {
@@ -1191,10 +1172,6 @@ header .header-container .menu {
 }
 
 .client {
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   padding-top: 300px;
 }
 .client-container {
@@ -1404,10 +1381,6 @@ header .header-container .menu {
 }
 
 .experience {
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   padding-top: 300px;
 }
 .experience-container {
@@ -1832,10 +1805,6 @@ header .header-container .menu {
 }
 
 .contact {
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   padding-top: 300px;
 }
 .contact .container-text {
@@ -2148,10 +2117,6 @@ header .header-container .menu {
 .footer {
   width: 100%;
   height: 150px;
-  background-image: url("../images/Ti29oM.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   padding-top: 50px;
 }
 .footer .footer-container {

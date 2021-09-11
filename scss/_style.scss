@@ -1,3 +1,8 @@
+body{
+    background-image: url('../images/Ti29oM.jpg');
+    @include bgimage (cover, no-repeat, center);
+    background-attachment: fixed;
+}
 header {
     @include wh(100%,60px);
     // background-color: $bg-color;
@@ -64,8 +69,8 @@ header {
 }
 // section-1-styles
 .home{
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
     .bg-color {
         @media(max-width:890px){
             width: 10%;
@@ -74,7 +79,7 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: $bg-color;
+        // background-color: $bg-color;
         .home-icon{
             @media (max-width:704px){
                 top: 50%;
@@ -102,6 +107,7 @@ header {
         @media(max-width:890px){
             width: 80%;
         }
+        border-radius:0% 100% 100% 0% / 59% 0% 100% 41%  ;
         background-color: $bg-color;
         height: 100vh;
         @include cont;
@@ -110,6 +116,7 @@ header {
             @include wh(50%,50%);
             display: flex;
             align-items: flex-end;
+            
             div{
                 @media (max-width:998px){
                     position: absolute;
@@ -175,8 +182,8 @@ header {
             width: 80%;
             height: 100%;
             border-radius: 76% 24% 0% 100% / 0% 0% 100% 100% ;
-            background-image: url('../images/Ti29oM.jpg');
-            @include bgimage (cover, no-repeat, center);
+            // background-image: url('../images/Ti29oM.jpg');
+            // @include bgimage (cover, no-repeat, center);
             .astronaut{
                 @media (max-width:990px){
                     right: 85%;
@@ -219,8 +226,10 @@ header {
 }
 // section-2-styles
 .about{position: relative;
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
+    margin-top: 100px;
+    margin-bottom: 100px;
     &-container{
         @media(max-width:890px){
             width: 80%;
@@ -231,17 +240,17 @@ header {
         @media(max-width:569px){
             width: 95%;
         }
-        
+        border-radius: 0% 100% 0% 100% / 0% 0% 100% 100% ;
         background-color: $bg-color;
         height: 100vh;
         @include cont;
         @include flex (flex, space-between, center);
         &-image{
             position: relative;
-            border-radius: 0% 100% 100% 0% / 30% 100% 0% 70% ;
+            // border-radius: 0% 100% 100% 0% / 30% 100% 0% 70% ;
             @include wh(60%,100%);
-            background-image: url('../images/Ti29oM.jpg');
-            @include bgimage (cover, no-repeat, center);
+            // background-image: url('../images/Ti29oM.jpg');
+            // @include bgimage (cover, no-repeat, center);
             @include flex(flex,center,flex-start);
             flex-direction: column;
             .about-astronaut{
@@ -425,7 +434,7 @@ header {
         // }
         width: 15%;
         height: 100vh;
-        background-color: $bg-color;
+        // background-color: $bg-color;
         position: absolute;
         top: 0;
         right: 0;
@@ -433,8 +442,8 @@ header {
 }
 // section-3-styles
 .portfolio{
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
     &-container{
         @include cont;
         height: 100vh;
@@ -575,8 +584,8 @@ header {
 }
 // section-3-styles
 .pg-pricing{
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
     height: 100vh;
     &-text{
         @include cont;
@@ -670,8 +679,8 @@ header {
 }
 // section-4-styles
 .client{
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
     padding-top: 300px;
     &-container{
         @media(max-width:320px){
@@ -797,8 +806,8 @@ header {
 }
 // section-5-style
 .experience{
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
     padding-top: 300px;
     &-container{
         @media (max-width:800px){
@@ -1044,8 +1053,8 @@ header {
 }
 // section-6-styles
 .contact{
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
     padding-top: 300px;
     .container-text{
         @media(max-width:1303px){
@@ -1216,8 +1225,8 @@ header {
 // footer-style
 .footer{
     @include wh (100%,150px);
-    background-image: url('../images/Ti29oM.jpg');
-    @include bgimage (cover, no-repeat, center);
+    // background-image: url('../images/Ti29oM.jpg');
+    // @include bgimage (cover, no-repeat, center);
     padding-top: 50px;
     .footer-container{
         @include cont;
